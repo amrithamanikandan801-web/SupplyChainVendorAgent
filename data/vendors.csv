@@ -1,0 +1,9 @@
+vendor_id,vendor_name,delivery_score,quality_score,cost_score,compliance_score
+V001,Alpha Logistics,85,90,80,95
+V002,Beta Suppliers,70,85,90,75
+V003,Gamma Industries,92,88,75,90
+V004,Delta Traders,65,70,95,60
+V005,Epsilon Exports,80,82,85,88
+V006,Zeta Manufacturing,75,92,78,82
+V007,Omega Supplies,88,80,90,70
+V008,Prime Logistics,94,91,82,96

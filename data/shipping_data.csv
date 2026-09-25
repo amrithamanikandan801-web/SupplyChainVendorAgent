@@ -1,0 +1,16 @@
+shipment_id,origin,destination,distance_km,carrier,weather_score,traffic_score,warehouse_delay_hours,customs_delay_hours,planned_days,actual_days
+S001,Chennai,Bangalore,350,DHL,2,3,2,0,2,3
+S002,Chennai,Hyderabad,630,FedEx,1,4,3,1,3,5
+S003,Bangalore,Mumbai,980,BlueDart,5,2,0,0,4,4
+S004,Chennai,Delhi,2200,DHL,2,5,5,3,6,9
+S005,Coimbatore,Chennai,500,FedEx,4,2,1,0,2,2
+S006,Madurai,Bangalore,430,BlueDart,3,3,2,0,2,4
+S007,Chennai,Pune,1200,DHL,1,5,4,2,4,7
+S008,Salem,Chennai,340,FedEx,5,1,0,0,2,2
+S009,Trichy,Bangalore,350,BlueDart,4,3,1,0,2,3
+S010,Chennai,Kolkata,1670,DHL,2,4,3,2,5,8
+S011,Coimbatore,Mumbai,1150,FedEx,4,2,1,1,4,5
+S012,Madurai,Chennai,460,BlueDart,5,2,0,0,2,2
+S013,Chennai,Bangalore,350,DHL,1,5,4,0,2,5
+S014,Salem,Hyderabad,780,FedEx,3,4,2,1,3,5
+S015,Trichy,Delhi,2100,BlueDart,2,5,5,3,6,10
