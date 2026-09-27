@@ -1,165 +1,78 @@
+Sure 👍 You mean remove the **horizontal lines / separator lines** from the README. Here is the clean version without those lines:
+
 # AI-Driven Supply Chain Intelligence and Automated Vendor Compliance Evaluation System
 
-An intelligent supply chain analytics platform that combines **Machine Learning, Data Analytics, Vendor Evaluation, Contract Parsing, and Compliance Risk Detection** into a single interactive system.
+## 📌 Overview
 
-The project is designed to analyze shipment data, predict potential delivery delays, evaluate vendor performance, extract important procurement contract information, and identify predefined compliance risks.
+The **AI-Driven Supply Chain Intelligence and Automated Vendor Compliance Evaluation System** is a Python-based project that integrates **Machine Learning, Data Analytics, Vendor Evaluation, Contract Analysis, and Compliance Risk Detection** into a single platform.
 
----
+The system analyzes shipment data to identify delays and predict future shipment delays using a **Random Forest Classifier**. It also evaluates vendor performance using a weighted scoring method and analyzes procurement contracts to extract important terms and identify predefined compliance risks.
 
-## 📌 Project Overview
-
-Supply chain operations involve multiple activities such as shipment tracking, vendor management, procurement, and contract compliance.
-
-This project provides an integrated solution that helps users:
-
-* 🚚 Analyze shipment performance
-* 🤖 Predict shipment delays using Machine Learning
-* 🏢 Evaluate vendor performance
-* 📄 Extract important information from procurement contracts
-* ⚠️ Identify potential compliance risks
-* 🧠 Combine results using a Supply Chain Intelligence Agent
-* 📊 View insights through an interactive Streamlit dashboard
-* 📥 Generate and download analytical reports
-
----
+An interactive **Streamlit dashboard** is provided to visualize the results and generate consolidated supply chain reports.
 
 ## 🎯 Objectives
 
-* Analyze historical logistics and shipment data.
+* Analyze historical shipment and logistics data.
 * Identify delayed and on-time shipments.
-* Predict shipment delays using a **Random Forest Classifier**.
+* Predict shipment delays using Machine Learning.
 * Evaluate vendors based on delivery, quality, cost, and compliance.
-* Calculate weighted vendor performance scores.
-* Automatically extract important contract terms.
+* Extract important information from procurement contracts.
 * Detect predefined compliance-related clauses.
-* Identify potential contract compliance risks.
-* Integrate all modules into a Supply Chain Intelligence Agent.
-* Provide an interactive dashboard for supply chain analysis.
+* Identify potential compliance risks.
+* Integrate all results through a Supply Chain Intelligence Agent.
+* Provide an interactive dashboard for analysis and reporting.
 
----
+## 🚀 Features
 
-## 🚀 Key Features
+### 🚚 Shipment Delay Prediction
 
-### 1. Shipment Intelligence
+Uses a **Random Forest Classifier** to predict whether a shipment is likely to be delayed.
 
-Analyzes historical shipping data and calculates:
+### 🏢 Vendor Evaluation
 
-* Total shipments
-* Delayed shipments
-* On-time shipments
-* Delay percentage
-* Shipment-level delay status
+Calculates vendor performance using:
 
-### 2. AI-Based Delay Prediction
+* Delivery Score – 25%
+* Quality Score – 25%
+* Cost Score – 20%
+* Compliance Score – 30%
 
-A **Random Forest Classifier** is trained using shipment-related features such as:
+### 📄 Contract Analysis
 
-* Distance
-* Weather score
-* Traffic score
-* Warehouse delay
-* Customs delay
-* Planned delivery days
-
-The model predicts whether a shipment is likely to be:
-
-**DELAY** or **ON-TIME**
-
-### 3. Vendor Intelligence
-
-Vendors are evaluated using four parameters:
-
-| Parameter        | Weight |
-| ---------------- | -----: |
-| Delivery Score   |    25% |
-| Quality Score    |    25% |
-| Cost Score       |    20% |
-| Compliance Score |    30% |
-
-The project-defined vendor score is calculated as:
-
-```text
-Vendor Score =
-(0.25 × Delivery) +
-(0.25 × Quality) +
-(0.20 × Cost) +
-(0.30 × Compliance)
-```
-
-### 4. Contract Intelligence
-
-The system processes procurement contract text and extracts important information such as:
+Extracts important contract information such as:
 
 * Delivery period
 * Payment period
 * Termination notice
-* Delivery delay notification period
+* Delay notification period
 
-### 5. Compliance Risk Detection
+### ⚠️ Compliance Risk Detection
 
-The system checks for predefined clauses including:
+Checks predefined contract clauses including:
 
 * Confidentiality
 * Insurance
 * Applicable laws and regulations
 * Delivery delay notification
 
-The project uses a simple rule-based screening approach:
+### 🧠 Supply Chain Intelligence Agent
 
-```text
-0 missing clauses      → LOW
-1–2 missing clauses    → MEDIUM
-More than 2 missing   → HIGH
-```
+Combines **Shipment Analysis, Delay Prediction, Vendor Evaluation, Contract Analysis, and Compliance Detection** into a consolidated supply chain report.
 
-> **Note:** This compliance classification is a project-defined screening heuristic and is not a substitute for professional legal review.
+### 📊 Streamlit Dashboard
 
-### 6. Supply Chain Intelligence Agent
-
-The agent integrates the outputs from:
-
-```text
-Shipment Analysis
-        ↓
-Delay Prediction
-        ↓
-Vendor Evaluation
-        ↓
-Contract Analysis
-        ↓
-Compliance Detection
-        ↓
-Integrated Supply Chain Report
-```
-
-### 7. Interactive Streamlit Dashboard
-
-The dashboard provides separate sections for:
-
-* 🏠 Executive Dashboard
-* 🚚 Shipment Intelligence
-* 🏢 Vendor Intelligence
-* 📄 Contract Intelligence
-* 🤖 AI Delay Prediction
-* 🧠 Supply Chain Intelligence Agent
-* 📥 Reports
-
----
+Provides an interactive interface for viewing project results and performing supply chain analysis.
 
 ## 🛠️ Technologies Used
 
-| Technology          | Purpose                         |
-| ------------------- | ------------------------------- |
-| Python              | Core development                |
-| Pandas              | Data processing and analysis    |
-| Scikit-learn        | Machine Learning                |
-| Random Forest       | Shipment delay prediction       |
-| Joblib              | Model saving and loading        |
-| Regular Expressions | Contract information extraction |
-| Streamlit           | Interactive dashboard           |
-| Git & GitHub        | Version control                 |
-
----
+* Python
+* Pandas
+* Scikit-learn
+* Random Forest
+* Joblib
+* Regular Expressions (Regex)
+* Streamlit
+* Git & GitHub
 
 ## 📂 Project Structure
 
@@ -187,271 +100,109 @@ SupplyChainVendorAgent/
     └── supply_chain_agent.py
 ```
 
----
-
-## 📊 Dataset
-
-The prototype uses:
-
-* **15 shipment records**
-* **8 vendor records**
-* **1 sample procurement contract**
+## 📊 Project Results
 
 ### Shipment Analysis
 
-| Metric            | Result |
-| ----------------- | -----: |
-| Total Shipments   |     15 |
-| Delayed Shipments |     11 |
-| On-Time Shipments |      4 |
-| Delay Rate        | 73.33% |
+* **Total Shipments:** 15
+* **Delayed Shipments:** 11
+* **On-Time Shipments:** 4
+* **Delay Rate:** 73.33%
 
----
+### Machine Learning
 
-## 🤖 Machine Learning Model
+* **Algorithm:** Random Forest Classifier
+* **Number of Estimators:** 100
+* **Test Size:** 20%
+* **Model Accuracy:** 100% on the current held-out test split
 
-The project uses a **Random Forest Classifier** for shipment delay prediction.
+> The current dataset contains only 15 records, so this accuracy result is suitable for the prototype but does not establish real-world model performance.
 
-### Model Configuration
+### Contract Analysis
 
-```text
-Algorithm: Random Forest Classifier
-Number of Estimators: 100
-Test Size: 20%
-Random State: 42
-```
+The sample contract contains:
 
-### Current Prototype Result
+* Delivery Period: **7 business days**
+* Payment Period: **30 days**
+* Termination Notice: **30 days**
+* Delay Notification: **24 hours**
 
-```text
-Model Accuracy: 100%
-```
+### Compliance Analysis
 
-The reported accuracy is based on the current held-out test split. Since the prototype dataset contains only 15 records, the result should **not be interpreted as evidence of general real-world performance**. A larger dataset and cross-validation would be required for reliable evaluation.
-
----
-
-## 🏢 Vendor Evaluation Results
-
-| Vendor             | Score |
-| ------------------ | ----: |
-| Alpha Logistics    | 88.25 |
-| Beta Suppliers     | 79.25 |
-| Gamma Industries   | 87.00 |
-| Delta Traders      | 70.75 |
-| Epsilon Exports    | 83.90 |
-| Zeta Manufacturing | 81.95 |
-| Omega Supplies     | 81.00 |
-| Prime Logistics    | 91.45 |
-
----
-
-## 📄 Contract Analysis Result
-
-The sample procurement contract contains:
-
-```text
-Delivery Period       : 7 business days
-Payment Period        : 30 days
-Termination Notice    : 30 days
-Delay Notification    : 24 hours
-```
-
-### Compliance Result
-
-```text
-Missing Required Clauses : 0
-Overall Risk             : LOW
-```
-
-The risk level is generated using the project's predefined rule-based screening logic.
-
----
+* **Missing Required Clauses:** 0
+* **Project-defined Compliance Risk:** LOW
 
 ## ⚙️ Installation
 
-### Step 1: Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/SupplyChainVendorAgent.git
 ```
 
-### Step 2: Open the Project
+### 2. Open the Project
 
-Open the project in **PyCharm** or another Python IDE.
+Open the project in **PyCharm**.
 
-### Step 3: Install Dependencies
+### 3. Install Required Packages
 
 ```bash
 pip install pandas scikit-learn joblib streamlit
 ```
 
-### Step 4: Run the Dashboard
+### 4. Run the Application
 
 ```bash
 streamlit run app.py
 ```
 
-The application will open in your web browser.
-
----
-
-## ▶️ Running Individual Modules
-
-### Data Preprocessing
-
-```bash
-python src/data_preprocessing.py
-```
-
-### Train Delay Prediction Model
-
-```bash
-python src/delay_prediction.py
-```
-
-### Contract Parser
-
-```bash
-python src/contract_parser.py
-```
-
-### Compliance Agent
-
-```bash
-python src/compliance_agent.py
-```
-
-### Supply Chain Intelligence Agent
-
-```bash
-python src/supply_chain_agent.py
-```
-
----
+The Streamlit dashboard will open in your browser.
 
 ## 🔄 System Workflow
 
 ```text
-                ┌──────────────────────┐
-                │   Shipment Dataset   │
-                └──────────┬───────────┘
-                           ↓
-                ┌──────────────────────┐
-                │ Data Preprocessing   │
-                └──────────┬───────────┘
-                           ↓
-                ┌──────────────────────┐
-                │ Random Forest Model  │
-                └──────────┬───────────┘
-                           ↓
-                  Delay Prediction
-                           │
-                           │
-┌──────────────────────────┼─────────────────────────┐
-│                          │                         │
-↓                          ↓                         ↓
-Vendor Data            Contract Data           Shipment Data
-│                          │                         │
-↓                          ↓                         ↓
-Vendor Scoring        Contract Parsing       Delay Analysis
-│                          │                         │
-↓                          ↓                         ↓
-Vendor Insights       Compliance Check        ML Prediction
-└──────────────────────────┼─────────────────────────┘
-                           ↓
-             Supply Chain Intelligence Agent
-                           ↓
-                  Streamlit Dashboard
-                           ↓
-                  Integrated Reports
+Shipment Data
+      ↓
+Data Preprocessing
+      ↓
+Shipment Delay Analysis
+      ↓
+Random Forest Prediction
+      ↓
+Vendor Evaluation
+      ↓
+Contract Parsing
+      ↓
+Compliance Risk Detection
+      ↓
+Supply Chain Intelligence Agent
+      ↓
+Streamlit Dashboard
+      ↓
+Reports
 ```
-
----
-
-## 📸 Dashboard
-
-The Streamlit dashboard provides:
-
-* Executive-level shipment metrics
-* Shipment delay analysis
-* Vendor performance comparison
-* Contract information extraction
-* AI delay prediction
-* Compliance risk analysis
-* Integrated Supply Chain Agent results
-* Downloadable reports
-
-Add your project screenshots below:
-
-```text
-screenshots/
-├── dashboard.png
-├── shipment-intelligence.png
-├── vendor-intelligence.png
-├── contract-intelligence.png
-├── delay-prediction.png
-└── supply-chain-agent.png
-```
-
----
 
 ## 🔮 Future Enhancements
 
-The project can be extended with:
-
-* Larger real-world shipment datasets
-* Cross-validation and advanced model evaluation
-* XGBoost and other ML algorithms
-* Explainable AI using SHAP
+* Larger real-world datasets
+* Advanced Machine Learning models
+* Cross-validation
+* Explainable AI
 * Real-time GPS tracking
-* Live weather and traffic APIs
-* Automated shipment alerts
+* Weather and traffic API integration
 * NLP/Transformer-based contract analysis
-* PDF and DOCX contract support
+* PDF/DOCX contract support
 * Database integration
-* User authentication and role-based access
+* User authentication
 * Cloud deployment
-* Email notifications
-* Advanced supplier risk analytics
-
----
+* Automated email alerts
 
 ## ⚠️ Limitations
 
-* The current prototype uses a small sample dataset.
-* Real-time logistics APIs are not integrated.
-* Contract parsing currently uses regular expressions and predefined rules.
-* Compliance detection is a basic screening mechanism.
-* The system does not provide legal advice.
-* Shipment data is stored in CSV format.
-* Authentication and role-based access are not currently implemented.
+* Uses a small prototype dataset.
+* Real-time logistics data is not currently integrated.
+* Contract analysis uses Regex and predefined rules.
+* Compliance detection is a basic screening mechanism and is **not legal advice**.
+* Data is currently stored using CSV and TXT files.
 
----
 
-## 🎓 Academic Project
-
-**Project Title:**
-AI-Driven Supply Chain Intelligence and Automated Vendor Compliance Evaluation System
-
-**Domain:**
-Data Analytics, Business Analytics, Machine Learning & Supply Chain Intelligence
-
-**Development Environment:**
-PyCharm
-
-**Application Framework:**
-Streamlit
-
----
-
-## 👩‍💻 Author
-
-**Amritha Manikandan**
-B.Tech – Computer Science and Business Systems (CSBS)
-
----
-
-## 📜 License
-
-This project is developed for **academic and educational purposes**.
